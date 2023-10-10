@@ -1,11 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import { ChakraProvider } from '@chakra-ui/react';
+import Header from './components/Header';
+import LandingSection from './components/LandingSection';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
-    </div>
+    <ChakraProvider>
+      <main>
+        <Header />
+        <LandingSection />
+      </main>
+    </ChakraProvider>
   );
 }
 
