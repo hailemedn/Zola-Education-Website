@@ -1,6 +1,8 @@
 import { Box, Heading, SimpleGrid, Text, VStack } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import Cards from "./cards";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const educationalContents = [
     {
@@ -26,23 +28,23 @@ const AboutUs = () => {
             <VStack p='5'>
                 <Box m='6'>
                     <VStack>
-                        <Heading>About Us</Heading>
-                        <Text>Zola Education provides Educational content on platforms such as <a>YouTube</a> & <a>Tiktok</a> </Text>
+                        <Heading m={6}>About us</Heading>
+                        <Text fontSize="lg">Zola Education provides Educational content on platforms such as <a href="https://www.youtube.com/@zolaeducation" rel="noopener noreferrer">YouTube</a> & <a>Tiktok</a>. </Text>
                     </VStack>
                     
                 </Box>
                 
                 <SimpleGrid spacing={10} templateColumns='repeat(auto-fill, minmax(290px, 1fr))'>
                     
-                    {educationalContents.map((eduContent) => (
+                    {educationalContents.map(({title, description, getImageSrc}) => (
                         <Cards 
-                            key={eduContent.title}
-                            title={eduContent.title}
-                            description={eduContent.description}
-                            imageSrc={eduContent.getImageSrc()} />
-
+                            key={title}
+                            title={title}
+                            description={description}
+                            imageSrc={getImageSrc()} />
                     ))}
                 </SimpleGrid>
+                <Text cursor="pointer"><a href="https://www.youtube.com/@zolaeducation" rel="noopener noreferrer">And many more <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon> </a></Text>
             </VStack>
         </FullScreenSection>
     )
