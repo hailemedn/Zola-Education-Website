@@ -2,7 +2,7 @@ import { Card, CardBody, CardFooter, Heading, Image, Text, VStack } from "@chakr
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-const Cards = ({title, description, imageSrc}) => {
+const Cards = ({title, description,url, imageSrc}) => {
     return (
         <Card>
             <CardBody>
@@ -13,7 +13,7 @@ const Cards = ({title, description, imageSrc}) => {
                 </VStack>
             </CardBody>
             <CardFooter>
-                <Text cursor="pointer"> <a href="https://www.youtube.com/@zolaeducation" target="_blank" rel="noreferrer noopener">Learn <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></a> </Text>
+                <Text cursor="pointer"> <a href={url} target="_blank" rel="noreferrer noopener">Learn <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon></a> </Text>
             </CardFooter>
         </Card>
     )
