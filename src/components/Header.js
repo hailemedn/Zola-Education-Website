@@ -35,7 +35,7 @@ const Header = () => {
                     py={4}
                     justifyContent="space-between">
                     <nav>
-                        <Heading>ZOLA EDUCATION</Heading>
+                        <Heading size='lg'>ZE</Heading>
                     </nav>
                     <nav>
                         <HStack spacing={8}>

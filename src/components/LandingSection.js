@@ -3,7 +3,7 @@ import FullScreenSection from "./FullScreenSection";
 const LandingSection = () => {
    return (
         <FullScreenSection 
-            backgroundColor="#2A4365"
+            backgroundColor="#18181b"
             justifyContent="center"
             isDarkBackground
 
@@ -11,9 +11,8 @@ const LandingSection = () => {
             <VStack>  
                 <VStack>
                     <Avatar src="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png" size='2xl'></Avatar>
-                    <Heading as="h2">Welcome!</Heading>
-                </VStack>
-                
+                    <Heading>Zola Education</Heading>
+                </VStack> 
             </VStack>
         </FullScreenSection>
     )
