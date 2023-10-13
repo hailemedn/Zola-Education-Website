@@ -1,6 +1,7 @@
-import { Avatar, Heading, VStack } from "@chakra-ui/react";
+import { Avatar, Heading, VStack, Image } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 const LandingSection = () => {
+    const ZeLogo =  require("../images/ZE-Logo.jpg")
    return (
         <FullScreenSection 
             backgroundColor="#18181b"
@@ -10,7 +11,7 @@ const LandingSection = () => {
             >
             <VStack>  
                 <VStack>
-                    <Avatar src="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png" size='2xl'></Avatar>
+                    <Avatar src={ZeLogo} size="full"></Avatar>
                     <Heading>Zola Education</Heading>
                 </VStack> 
             </VStack>
