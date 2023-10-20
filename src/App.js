@@ -13,7 +13,7 @@ function App() {
         <Header />
         <LandingSection />
         <AboutUs />
-        <ContactSection />
+        {/* <ContactSection /> */}
       </main>
     </ChakraProvider>
   );

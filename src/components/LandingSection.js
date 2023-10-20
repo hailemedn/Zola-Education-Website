@@ -1,4 +1,4 @@
-import { Avatar, Heading, VStack, Image } from "@chakra-ui/react";
+import { Avatar, Heading, VStack } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 const LandingSection = () => {
     const ZeLogo =  require("../images/ZE-Logo.jpg")
