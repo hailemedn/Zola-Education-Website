@@ -2,6 +2,9 @@ import { Box, HStack, Heading } from "@chakra-ui/react";
 import { faTiktok } from "@fortawesome/free-brands-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import './headerStyles.css'
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import { Component, useState } from "react";
 
 
 const socials = [
@@ -17,47 +20,37 @@ const socials = [
 ]
 
 
-const Header = () => {
-    return (
-        <Box 
-            position="fixed"
-            top={0}
-            right={0}
-            left={0}
-            backgroundColor="#18181b">
-
-            <Box 
-                maxWidth="1280px"
-                margin="0 auto"
-                color="white">
-                <HStack 
-                    px={16}
-                    py={4}
-                    justifyContent="space-between">
-                    <nav>
-                        <Heading size='lg'>ZE</Heading>
-                    </nav>
-                    <nav>
-                        <HStack spacing={8}>
-                            <a href="google.com">About</a>
-                            <a href="google.com">Contact us</a>
-                        </HStack>
-                    </nav>
-                    <nav>
-                        <HStack spacing={8}>
+const Header = () =>  {
+    // state = {clicked: false}
+    // handleClick = () => {
+    //     this.setState({clicked: !this.state.clicked})
+    // }
+    // render() {
+        const [clicked, setClicked] = useState(false)
+        const handleClick = () => {
+            setClicked(!clicked)
+        }
+        return (
+            <div className="container">
+                <nav>
+                    <Heading><a>ZE</a></Heading>
+                    <div>
+                        <ul id="navbar" className={clicked ? "#navbar active": "#navbar"}>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact us</a></li>
                             {socials.map(({icon, url}) => (
-                                <a href={url} key={url} target="_blank" rel="noopener noreferrer">
-                                    <FontAwesomeIcon icon={icon} size='2x'></FontAwesomeIcon>
-                                </a>
+                              <li><a href={url}><FontAwesomeIcon icon={icon} /> </a></li>  
                             ))}
-                        </HStack>
-                    </nav>
-                </HStack>
-
-            </Box>
-            
-        </Box>
-    )
-}
+                        </ul>
+                    </div>
+                    <div id="mobile" onClick={handleClick}>
+                        <FontAwesomeIcon icon={clicked ? faTimes : faBars} size='2xl' cursor="pointer"></FontAwesomeIcon>
+                    </div> 
+                </nav>
+            </div>
+        )
+    }
+    
+// }
 
 export default Header;
