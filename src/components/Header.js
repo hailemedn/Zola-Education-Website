@@ -36,10 +36,10 @@ const Header = () =>  {
                     <Heading><a>ZE</a></Heading>
                     <div>
                         <ul id="navbar" className={clicked ? "#navbar active": "#navbar"}>
-                            <li><a href="#">About</a></li>
+                            <li><a href="#/about">About</a></li>
                             <li><a href="#">Contact us</a></li>
                             {socials.map(({icon, url}) => (
-                              <li><a href={url}><FontAwesomeIcon icon={icon} /> </a></li>  
+                              <li key={url}><a href={url}><FontAwesomeIcon icon={icon} /> </a></li>  
                             ))}
                         </ul>
                     </div>
