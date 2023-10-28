@@ -5,7 +5,7 @@ nav {
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-    color: white;
+    
 }
 
 #navbar {
@@ -16,6 +16,9 @@ nav ul li {
     list-style: none;
     padding: 0 12px;
     position: relative;
+}
+nav a {
+    cursor: pointer;
 }
 
 nav a:hover {
@@ -41,8 +44,12 @@ nav div{
 }
 
 div.container {
-    background-color: black;
+    background-color: #FAF9F6;
     padding: 12px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 #mobile {

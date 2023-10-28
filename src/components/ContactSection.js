@@ -26,13 +26,12 @@ const ContactSection = () => {
     console.log(formik);
     return (
         <FullScreenSection
-            backgroundColor="#18181b"
-            isDarkBackground
+            backgroundColor= "#FAF9F6"
             justifyContent ="center"
             py={16}
             spacing={8}>
             <VStack w="100vw" p={3} alignItems="center">
-                <Heading mb={8}>Contact us</Heading>
+                <Heading mb={8} as="h1" id="contactus-section">Contact us</Heading>
                 <Box w="100%" maxW="700px" rounded='md'>
                     <form onSubmit={formik.handleSubmit}>
                         <VStack spacing={4}>
@@ -41,27 +40,28 @@ const ContactSection = () => {
                                 <Input 
                                     id="firstName"
                                     name="firstName"
+                                    borderColor= "black"
                                     {...formik.getFieldProps("firstName")}>
                                 </Input>
                                 <FormErrorMessage>{formik.errors.firstName}</FormErrorMessage>
                             </FormControl>
                             <FormControl isInvalid={!!formik.errors.email && formik.touched.email}>
                                 <FormLabel>email</FormLabel>
-                                <Input id="email" name="email" {...formik.getFieldProps("email")}></Input>
+                                <Input id="email" name="email" borderColor= "black" {...formik.getFieldProps("email")}></Input>
                                 <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
                             </FormControl>
                             <FormControl isInvalid={!!formik.errors.subjectline && formik.touched.subjectline}>
                                 <FormLabel htmlFor="subjectLine">Subject Line</FormLabel>
-                                <Input id="subjectLine" name="subjectLine" {...formik.getFieldProps("subjectline")}></Input>
+                                <Input id="subjectLine" name="subjectLine" borderColor= "black"{...formik.getFieldProps("subjectline")}></Input>
                                 <FormErrorMessage>{formik.errors.subjectline}</FormErrorMessage>
                             </FormControl>
                             <FormControl isInvalid={!!formik.errors.message && formik.touched.message}>
                                 <FormLabel>Message</FormLabel>
-                                <Textarea height={250} id="message" name="message" {...formik.getFieldProps("message")}></Textarea>
+                                <Textarea height={250} id="message" name="message" borderColor= "black" {...formik.getFieldProps("message")}></Textarea>
                                 <FormErrorMessage>{formik.errors.message}</FormErrorMessage>
                             </FormControl>
                             <FormControl>
-                                <Button type="submit" colorScheme="purple">Submit</Button>
+                                <Button type="submit" colorScheme="blue" width="30%" p="20px">Submit</Button>
                             </FormControl>
                         </VStack>
                     </form>

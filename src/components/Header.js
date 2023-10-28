@@ -4,7 +4,7 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './headerStyles.css'
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import { Component, useState } from "react";
+import { Component, useState, useRef } from "react";
 
 
 const socials = [
@@ -30,17 +30,31 @@ const Header = () =>  {
         const handleClick = () => {
             setClicked(!clicked)
         }
+
+        const handleNavigation = (anchor) => () => {
+            const id = `${anchor}-section`
+            const element = document.getElementById(id)
+            if(element) {
+                element.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+            }
+        }
+
+        
+
         return (
             <div className="container">
                 <nav>
-                    <Heading><a>ZE</a></Heading>
+                    <Heading><a href="#">ZE</a></Heading>
                     <div>
                         <ul id="navbar" className={clicked ? "#navbar active": "#navbar"}>
-                            <li><a href="#/about">About</a></li>
-                            <li><a href="#">Contact us</a></li>
-                            {socials.map(({icon, url}) => (
+                            <li><a href="#aboutus" onClick={handleNavigation("aboutus")}>About</a></li>
+                            <li><a href="#contactus" onClick={handleNavigation("contactus")}>Contact us</a></li>
+                            {/* {socials.map(({icon, url}) => (
                               <li key={url}><a href={url}><FontAwesomeIcon icon={icon} /> </a></li>  
-                            ))}
+                            ))} */}
                         </ul>
                     </div>
                     <div id="mobile" onClick={handleClick}>

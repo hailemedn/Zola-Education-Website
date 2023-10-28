@@ -31,7 +31,7 @@ const AboutUs = () => {
             <VStack p='5'>
                 <Box m='6'>
                     <VStack>
-                        <Heading m={6}>About us</Heading>
+                        <Heading m={6} as="h1" id="aboutus-section">About us</Heading>
                         <Text fontSize="lg">Zola Education provides Educational content on platforms such as <a href="https://www.youtube.com/@zolaeducation" rel="noopener noreferrer">YouTube</a> & <a>Tiktok</a>. </Text>
                     </VStack>
                     
