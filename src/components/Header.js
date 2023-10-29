@@ -47,7 +47,7 @@ const Header = () =>  {
         return (
             <div className="container">
                 <nav>
-                    <Heading><a href="#">ZE</a></Heading>
+                    <Heading color="#D31D50"><a href="#">ZE</a></Heading>
                     <div>
                         <ul id="navbar" className={clicked ? "#navbar active": "#navbar"}>
                             <li><a href="#aboutus" onClick={handleNavigation("aboutus")}>About</a></li>

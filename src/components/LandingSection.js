@@ -29,10 +29,10 @@ const LandingSection = () => {
                     
                 </VStack> 
                 <VStack p="30px" alignItems="center">
-                    <Heading>Zola Education</Heading>
+                    <Heading><span className="red">Z</span>OLA <span className="red">E</span>DUCATION</Heading>
                     <Heading as="h2" size="md">Educational Content in Amharic</Heading>
                     <VStack mt="15px">
-                        <Text color="red.400" fontSize="2xl" fontWeight="semibold">Visit our Socials</Text>
+                        <Text color="#D31D50" fontSize="2xl" fontWeight="semibold">Visit our Socials</Text>
                         <HStack spacing={6}> 
                             {socials.map(({icon, url}) => (
                                 <a href={url} key={url}><FontAwesomeIcon icon={icon} size='2x'></FontAwesomeIcon></a>
