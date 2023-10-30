@@ -21,18 +21,19 @@ const LandingSection = () => {
         <FullScreenSection 
             backgroundColor="#FAF9F6"
             justifyContent="center"
-
+            id = "home-section"
             >
+            
             <HStack gap="4" justifyContent="center" flexWrap="wrap" p={10} m={3}>  
                 <VStack>
                     <Image src={ZeLogo} alt="Ze Logo" borderRadius="full"></Image>
                     
                 </VStack> 
                 <VStack p="30px" alignItems="center">
-                    <Heading><span className="red">Z</span>OLA <span className="red">E</span>DUCATION</Heading>
+                    <Heading><span className="red">Z</span>ola <span className="red">E</span>ducation</Heading>
                     <Heading as="h2" size="md">Educational Content in Amharic</Heading>
                     <VStack mt="15px">
-                        <Text color="#D31D50" fontSize="2xl" fontWeight="semibold">Visit our Socials</Text>
+                        <Text color="#2049ea" fontSize="2xl" fontWeight="semibold">Visit our Socials</Text>
                         <HStack spacing={6}> 
                             {socials.map(({icon, url}) => (
                                 <a href={url} key={url}><FontAwesomeIcon icon={icon} size='2x'></FontAwesomeIcon></a>

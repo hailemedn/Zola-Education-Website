@@ -46,11 +46,13 @@ nav div{
 
 div.container {
     background-color: #FAF9F6;
+    border-bottom: #eef0f1 solid 0.2px;
     padding: 12px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    transition: .3s;
 }
 
 #mobile {
@@ -71,7 +73,7 @@ div.container {
         max-width: 300px;
         width: 100%;
         height: 100vh;
-        background: #2a3239;
+        background: #eff0f2;
         box-shadow: 0 40px 60px rgba(0,0,0,0.1);
         padding: 40px 0 0 10px;
         transition: 0.3s ease-in-out;
