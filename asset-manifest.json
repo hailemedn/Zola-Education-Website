@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/Zola-Education-Website/static/css/main.7b0bba9d.css",
-    "main.js": "/Zola-Education-Website/static/js/main.ee45c16e.js",
+    "main.css": "/Zola-Education-Website/static/css/main.193a8775.css",
+    "main.js": "/Zola-Education-Website/static/js/main.22ffcc0d.js",
     "static/js/787.50cbce03.chunk.js": "/Zola-Education-Website/static/js/787.50cbce03.chunk.js",
-    "static/media/Screenshot 2023-10-11 131714.png": "/Zola-Education-Website/static/media/Screenshot 2023-10-11 131714.434304ca7b37c0aedeae.png",
-    "static/media/Screenshot 2023-10-11 124928.png": "/Zola-Education-Website/static/media/Screenshot 2023-10-11 124928.d4d63b4a0bdb8b37ca88.png",
-    "static/media/Screenshot 2023-10-11 125251.png": "/Zola-Education-Website/static/media/Screenshot 2023-10-11 125251.c11174965df9571b8644.png",
+    "static/media/course3.png": "/Zola-Education-Website/static/media/course3.434304ca7b37c0aedeae.png",
+    "static/media/course1.png": "/Zola-Education-Website/static/media/course1.d4d63b4a0bdb8b37ca88.png",
+    "static/media/course2.png": "/Zola-Education-Website/static/media/course2.c11174965df9571b8644.png",
+    "static/media/hero-background.png": "/Zola-Education-Website/static/media/hero-background.1526b0028f140dba5cf9.png",
+    "static/media/Youtube.png": "/Zola-Education-Website/static/media/Youtube.c9596fef872836c2c136.png",
     "index.html": "/Zola-Education-Website/index.html",
-    "main.7b0bba9d.css.map": "/Zola-Education-Website/static/css/main.7b0bba9d.css.map",
-    "main.ee45c16e.js.map": "/Zola-Education-Website/static/js/main.ee45c16e.js.map",
+    "main.193a8775.css.map": "/Zola-Education-Website/static/css/main.193a8775.css.map",
+    "main.22ffcc0d.js.map": "/Zola-Education-Website/static/js/main.22ffcc0d.js.map",
     "787.50cbce03.chunk.js.map": "/Zola-Education-Website/static/js/787.50cbce03.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b0bba9d.css",
-    "static/js/main.ee45c16e.js"
+    "static/css/main.193a8775.css",
+    "static/js/main.22ffcc0d.js"
   ]
 }
