@@ -21,21 +21,35 @@
     border: none;
     font-family: 'Karla', sans-serif;
     font-weight: 400;
+    cursor: pointer;
+}
+
+.btn.primary:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 header h1 {
     font-size: 20pt;
     font-family: 'Poppins', sans-serif;
-    
+    cursor: pointer;
 }
 
+#hero-section .headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-
+#hero-section button {
+    margin-top: 3rem;
+}
 
 
 #navbar {
@@ -55,6 +69,7 @@ nav ul li {
 header a {
     text-decoration: none;
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 
@@ -130,6 +145,8 @@ header.container {
 }
 
 
+
+
 section#hero-section {
     position: relative;
     color: var(--light-color);
@@ -139,6 +156,7 @@ section#hero-section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 
 section#hero-section::after {

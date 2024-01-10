@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/Header';
 import LandingSection from './components/LandingSection';
+import Youtube from './components/Youtube';
 
 
 
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <main>
         <LandingSection />
+        <Youtube />
       </main>
     </>
   );

@@ -59,7 +59,7 @@ const Header = () => {
     <header className="container wrapper" ref={headerRef}>
       <h1>
         <a href="#home" onClick={handleNavigation("home")}>
-          ZE
+          ZEs
         </a>
       </h1>
       <nav>
