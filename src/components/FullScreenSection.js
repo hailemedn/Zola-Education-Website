@@ -4,7 +4,7 @@ import { VStack } from "@chakra-ui/react";
 
 const FullScreenSection = ({children, isDarkBackground, ...boxProps}) => {
     return (
-        <VStack 
+        <VStack
             backgroundColor={boxProps.backgroundColor}
             color={isDarkBackground ? "white" : "black"}
             overflowX="hidden">
