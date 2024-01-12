@@ -57,7 +57,7 @@ const Header = () => {
     <header className="container" ref={headerRef}>
       <div className="wrapper">
         <h1>
-          <a href="#home" onClick={handleNavigation("home")}>
+          <a href="#home" onClick={handleNavigation("hero")}>
             ZE
           </a>
         </h1>
@@ -67,7 +67,7 @@ const Header = () => {
               <a
                 className="red"
                 href="#contactus"
-                onClick={handleNavigation("contactus")}
+                onClick={handleNavigation("hero")}
               >
                 Home
               </a>
@@ -76,7 +76,7 @@ const Header = () => {
               <a
                 className="red"
                 href="#contactus"
-                onClick={handleNavigation("contactus")}
+                onClick={handleNavigation("youtube")}
               >
                 YouTube
               </a>
@@ -85,7 +85,7 @@ const Header = () => {
               <a
                 className="red"
                 href="#aboutus"
-                onClick={handleNavigation("aboutus")}
+                onClick={handleNavigation("courses")}
               >
                 Courses
               </a>

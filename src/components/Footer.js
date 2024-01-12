@@ -32,7 +32,7 @@ const Footer = () => {
                 <a href="">Basic Computer Skills</a>
               </li>
               <li>
-                <a href="">Microsoft Word Training</a>
+                <a href="">MS Word Training</a>
               </li>
               <li>
                 <a href="">ICT COC Training</a>

@@ -79,11 +79,11 @@ header h1 {
 
 #navbar {
   display: flex;
+  gap: 2rem;
 }
 
 nav ul li {
   list-style: none;
-  padding: 0 12px;
   position: relative;
   cursor: pointer;
   font-family: "Karla", sans-serif;
@@ -95,18 +95,18 @@ header a {
   color: var(--primary-color);
 }
 
-nav a:after {
+nav li:after {
   content: "";
   position: absolute;
   bottom: -4px;
-  left: 15px;
+  left: 3px;
   width: 0;
   height: 2px;
   transition: width 0.2s ease-in-out;
   background: var(--primary-color);
 }
 
-nav a:hover:after {
+nav li:hover:after {
     width: 40%;
 }
 
@@ -240,12 +240,17 @@ section#youtube-section {
 
 
 #courses-section {
-  background-color: var(--secondary-color);
+  background-color: #222222;
 }
 
 #courses-section p {
     text-align: left;
 }
+
+#courses-section h1 {
+    text-align: left;
+}
+
 
 #contactus-section {
   display: flex;
@@ -267,12 +272,12 @@ section#youtube-section {
 }
 
 footer {
-    background-color: var(--secondary-color);
+    background-color: #222222;
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
 
-footer h1,h3 {
+footer h1, footer h3 {
     color: var(--primary-color);
 }
 
@@ -298,20 +303,17 @@ footer li {
 .cards-container {
   display: flex;
   justify-content: space-between;
-  gap: 1rem;
   flex-wrap: wrap;
 }
 .cards-container > * {
   flex: 1;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 3rem;
 }
 .card {
   max-width: 245px;
   min-width: 190px;
   height: 445px;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   border-radius: 10px;
   position: relative;
   color: var(--light-color);
