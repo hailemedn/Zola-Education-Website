@@ -9,20 +9,20 @@ const courses = [
       imgSrc: course1Img ,
       title: "Basic Computer Skills",
       description:
-        "best greek salad in town, try it and tell us what you think",
+        "Get started and learn how to use a computer and additonal skills",
       url: "https://www.youtube.com/watch?v=8vqBUYA7ZLk&list=PLKXxT8ltBxOfZC-V7GYIUHbnxlsdapPpa",
     },
     {
       imgSrc: course2Img ,
       title: "Microsoft Word Traning",
-      description: "try out the best lemon desert there is, delicious",
+      description: "Learn to use Microsoft word effectively and take your skills to the next level",
       url: "https://www.youtube.com/watch?v=0JhP12KRPBk&list=PLKXxT8ltBxOdHyjRVXRmxPDp4RKlnQ3ky",
     },
     {
       imgSrc: course3Img ,
       title: "ICT COC Training",
       description:
-        "Tastes so good, It will make you want to go home and hug your momma!",
+        "This playlist aims to prepare you for the COC exam",
       url: "https://www.youtube.com/watch?v=hxEmLrGa7Fc&list=PLKXxT8ltBxOdvyTcNppifrd3--hnDojnp",
     },
   ];

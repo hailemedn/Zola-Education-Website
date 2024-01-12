@@ -304,6 +304,7 @@ footer li {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 .cards-container > * {
   flex: 1;
@@ -346,6 +347,10 @@ footer li {
 
 
 @media screen and (max-width:800px){
+    .cards-container {
+        justify-content: center;
+    }
+    
     .footer-container {
         grid-template-columns: 1fr 2fr;
         grid-template-areas: "logo nav1"
