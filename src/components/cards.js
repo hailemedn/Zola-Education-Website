@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRightArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import course1Img from '../images/course1.png';
 import course2Img from '../images/course2.png';
 import course3Img from '../images/course3.png';
@@ -39,7 +39,7 @@ const Cards = () => {
                 <div className="card-description">
                   <p className="description">{description}</p>
                 </div>
-                <a href={url} className='card-bottom'>Go to Course <FontAwesomeIcon icon={faArrowRightArrowLeft}></FontAwesomeIcon> </a>
+                <a href={url} className='card-bottom'>Go to Course  <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon> </a>
             </div>
         ))}
     </div>

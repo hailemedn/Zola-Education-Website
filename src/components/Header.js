@@ -106,6 +106,7 @@ const Header = () => {
             icon={clicked ? faTimes : faBars}
             size="2xl"
             cursor="pointer"
+            color="#3887BE"
           ></FontAwesomeIcon>
         </div>
       </div>
