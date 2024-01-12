@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Zola-Education-Website/static/css/main.5a4093e0.css",
+    "main.css": "/Zola-Education-Website/static/css/main.330c11c5.css",
     "main.js": "/Zola-Education-Website/static/js/main.e602d310.js",
     "static/js/787.50cbce03.chunk.js": "/Zola-Education-Website/static/js/787.50cbce03.chunk.js",
     "static/media/course3.png": "/Zola-Education-Website/static/media/course3.434304ca7b37c0aedeae.png",
@@ -9,12 +9,12 @@
     "static/media/hero-background.png": "/Zola-Education-Website/static/media/hero-background.1526b0028f140dba5cf9.png",
     "static/media/Youtube.png": "/Zola-Education-Website/static/media/Youtube.c9596fef872836c2c136.png",
     "index.html": "/Zola-Education-Website/index.html",
-    "main.5a4093e0.css.map": "/Zola-Education-Website/static/css/main.5a4093e0.css.map",
+    "main.330c11c5.css.map": "/Zola-Education-Website/static/css/main.330c11c5.css.map",
     "main.e602d310.js.map": "/Zola-Education-Website/static/js/main.e602d310.js.map",
     "787.50cbce03.chunk.js.map": "/Zola-Education-Website/static/js/787.50cbce03.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a4093e0.css",
+    "static/css/main.330c11c5.css",
     "static/js/main.e602d310.js"
   ]
 }
