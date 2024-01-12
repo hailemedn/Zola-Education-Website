@@ -58,7 +58,7 @@ const Header = () => {
       <div className="wrapper">
         <h1>
           <a href="#home" onClick={handleNavigation("home")}>
-            ZEs
+            ZE
           </a>
         </h1>
         <nav>

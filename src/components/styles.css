@@ -17,6 +17,11 @@ a {
 
 p {
   line-height: 1.5rem;
+  text-align: center;
+}
+
+h1 {
+    text-align: center;
 }
 
 .wrapper {
@@ -29,14 +34,18 @@ p {
 .btn {
   max-width: 240px;
   width: 100%;
-  height: 40pt;
-  background-color: var(--primary-color);
-  color: var(--light-color);
+  padding: 1rem 0;
   border-radius: 10px;
   border: none;
   font-family: "Karla", sans-serif;
   font-weight: 400;
   cursor: pointer;
+  text-align: center;
+}
+
+.primary {
+    background-color: var(--primary-color);
+    color: var(--light-color);
 }
 
 .btn.primary:hover {
@@ -67,15 +76,6 @@ header h1 {
   cursor: pointer;
 }
 
-#hero-section .headings {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#hero-section button {
-  margin-top: 3rem;
-}
 
 #navbar {
   display: flex;
@@ -95,18 +95,19 @@ header a {
   color: var(--primary-color);
 }
 
-nav a:hover {
-  transition: 0.3s ease-in-out;
-}
-
-nav a:hover::after {
+nav a:after {
   content: "";
   position: absolute;
   bottom: -4px;
   left: 15px;
-  width: 30%;
+  width: 0;
   height: 2px;
-  background: lightgreen;
+  transition: width 0.2s ease-in-out;
+  background: var(--primary-color);
+}
+
+nav a:hover:after {
+    width: 40%;
 }
 
 nav div {
@@ -160,7 +161,7 @@ header.container {
   }
 }
 
-section#hero-section {
+#hero-section {
   position: relative;
   color: var(--light-color);
   height: 100vh;
@@ -172,7 +173,7 @@ section#hero-section {
   gap: 2rem;
 }
 
-section#hero-section::after {
+#hero-section::after {
   content: "";
   position: absolute;
   top: 0;
@@ -183,6 +184,15 @@ section#hero-section::after {
   background-size: cover;
   z-index: -1;
 }
+
+#hero-section .headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #hero-section button {
+    margin-top: 3rem;
+  }
 
 h1.title {
   font-size: 4rem;
@@ -203,6 +213,7 @@ section#youtube-section {
   max-width: 500px;
   width: 100%;
   max-height: 300px;
+  margin: 0 auto;
 }
 
 #youtube-section h1 {
@@ -227,8 +238,13 @@ section#youtube-section {
   gap: 2rem;
 }
 
+
 #courses-section {
   background-color: var(--secondary-color);
+}
+
+#courses-section p {
+    text-align: left;
 }
 
 #contactus-section {
@@ -248,6 +264,35 @@ section#youtube-section {
 
 #contactus-section p {
   margin-bottom: 2rem;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer h1,h3 {
+    color: var(--primary-color);
+}
+
+footer h1 {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+footer h3 {
+    margin: 1.5rem 0;
+}
+
+footer li {
+    margin-bottom: 0.4rem;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .cards-container {
@@ -295,4 +340,30 @@ section#youtube-section {
 
 .card-title h3 {
   font-size: 16px;
+}
+
+
+@media screen and (max-width:800px){
+    .footer-container {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "logo nav1"
+                                "logo nav2"
+                                "logo nav3";
+    }
+
+    .footer-logo {
+        grid-area: logo;
+    }
+
+    .footer-nav {
+        grid-area: nav1;
+    }
+
+    .footer-courses {
+        grid-area: nav2;
+    }
+
+    .footer-socials {
+        grid-area: nav3;
+    }
 }

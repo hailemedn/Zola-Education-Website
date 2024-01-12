@@ -4,6 +4,7 @@ import LandingSection from './components/LandingSection';
 import Youtube from './components/Youtube';
 import Courses from './components/Courses';
 import ContactSection from './components/ContactSection';
+import Footer from './components/Footer';
 
 
 
@@ -17,6 +18,7 @@ function App() {
         <Courses />
         <ContactSection />
       </main>
+      <Footer />
     </>
   );
 }

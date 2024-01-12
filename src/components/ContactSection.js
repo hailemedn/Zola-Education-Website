@@ -4,7 +4,7 @@ const ContactSection = () => {
         <section id="contactus-section">
             <h1>Get in touch</h1>
             <p>Contact us and let's talk. We would like to pick your brain</p>
-            <button className="btn primary">Contact us</button>
+            <a className="btn primary" href="mailto:hailemedn@gmail.com">Contact us</a>
         </section>
     );
     
